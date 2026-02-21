@@ -221,7 +221,7 @@ main {
     text-align: center;
 }
 
-#current-events, #weather, #company-spotlights {
+#current-events, #membership-benefits, #company-spotlights {
     margin: 0 10px 20px 10px;
 }
 
@@ -229,7 +229,7 @@ main {
     background-color: white;
 }
 
-#current-events h2, #weather h2 {
+#current-events h2, #membership-benefits h2 {
     font-family: 'Playfair Display', serif;
     color: white;
     background-color: var(--text-color);
@@ -376,25 +376,11 @@ main {
     justify-self: center;
 }
 
-/*******Weather*******/
+/*******Membership Benefits*******/
 
-#weather {
+#membership-benefits {
     background-color: var(--secondary-color);
 
-}
-
-#weather-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr;
-}
-
-#temperature {
-    font-size: 2rem;
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    margin-top: 2rem;
-    text-align: left;
 }
 
 #temperature span {
@@ -408,24 +394,12 @@ main {
     text-align: left;
 }
 
-#weather-content img {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    display: block;
-    margin-left: 30%;
-    justify-self: end;
-}
-
-#forecast {
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
-    margin-top: 2rem;
+#membership-info {
     padding: 30px;
-    border-top: 1px dashed var(--text-color);
     font-family: 'Playfair Display', sans-serif;
 }
 
-#forecast p {
+#membership-info p {
     text-align: left;
     font-size: 1.25rem;
     margin: 20px 0 20px 0;
