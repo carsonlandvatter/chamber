@@ -1,20 +1,19 @@
-const currentYear = document.querySelector("#current-year");
-const date = new Date().getFullYear();
+const currentYear = document.getElementById('current-year');
+const year = new Date().getFullYear();
 
-currentYear.textContent = `${date}`;
+currentYear.textContent = `${year}`;
 
-//LAST MODIFIED:
-const lastModified = document.querySelector("#lastModified");
+const lastModified = document.getElementById('last-modified');
 
 const options = {
-    month: "numeric",
-    day: "numeric",
-    year: "numeric",
-    hour: "numeric",
-    minute: "numeric",
-    second: "numeric"
+    month: 'numeric',
+    day: 'numeric',
+    year: 'numeric',
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric',
 }
 
-const modifiedDate = new Date(document.lastModified).toLocaleString('en-US', options);
+const date = new Date(document.lastModified).toLocaleString('en-US', options);
 
-lastModified.textContent =  `Last Modification: ${modifiedDate}`;
+lastModified.textContent = `Last Modification: ${date}`
