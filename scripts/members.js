@@ -40,7 +40,7 @@ const displayCompanies = (companies) => {
 };
 
 async function getCompanyData() {
-    const response = await fetch('https://carsonlandvatter.github.io/wdd231/chamber/data/members.json');
+    const response = await fetch('https://carsonlandvatter.github.io/chamber/data/members.json');
     const data = await response.json();
 
     displayCompanies(data.companies);

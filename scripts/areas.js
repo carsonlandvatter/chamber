@@ -32,7 +32,7 @@ const displayAreas = (items) => {
 };
 
 async function getAreaData() {
-    const response = await fetch('https://carsonlandvatter.github.io/wdd231/chamber/data/areas.json');
+    const response = await fetch('https://carsonlandvatter.github.io/chamber/data/areas.json');
     const data = await response.json();
 
     displayAreas(data.items);
